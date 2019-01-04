@@ -16,7 +16,7 @@ pipeline {
         }
     }
 }'''
-        image 'Jenkinsfile.txt'
+        image 'Jenkinsfile'
       }
 
     }
