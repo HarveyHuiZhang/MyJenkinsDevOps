@@ -1,7 +1,6 @@
 pipeline {
   agent {
     docker {
-      image 'Jenkinsfile'
       args '''pipeline {
     agent {
         docker {
@@ -17,6 +16,7 @@ pipeline {
         }
     }
 }'''
+        image 'Jenkinsfile.txt'
       }
 
     }
