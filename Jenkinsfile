@@ -9,13 +9,13 @@ pipeline {
     }
     stage('build') {
       steps {
-        powershell(script: '%user.dir%/powershell/build.ps1', encoding: 'utf-8', returnStatus: true, returnStdout: true)
+        powershell(script: 'C:/Users/tlu038/programs/Jenkins/powershell/build.ps1', encoding: 'utf-8', returnStatus: true, returnStdout: true)
         echo 'Maven building is completed.'
       }
     }
     stage('sonar') {
       steps {
-        powershell(script: '%user.dir%/powershell/sonar.ps1', encoding: 'utf-8', returnStatus: true, returnStdout: true)
+        powershell(script: 'C:/Users/tlu038/programs/Jenkins/powershell/sonar.ps1', encoding: 'utf-8', returnStatus: true, returnStdout: true)
       }
     }
   }
