@@ -10,6 +10,12 @@ addons:
     organization: harveyhuizhang-github
     token:
       secure: ${SONAR_TOKEN}
+      
+cache:
+  directories:
+  - .autoconf
+  - $HOME/.m2
+
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   #624cd10597a862c57608cfc61dbb7c484c7d68b0
