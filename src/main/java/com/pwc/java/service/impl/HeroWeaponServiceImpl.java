@@ -13,6 +13,8 @@ public class HeroWeaponServiceImpl implements HeroWeaponService {
 	public void weapon() {
 		System.out.println("增益血量");
 		System.out.println("提高移动速度");
+		System.out.println("提高移动速度");
+		System.out.println("提高移动速度");
 	}
 	
 }
