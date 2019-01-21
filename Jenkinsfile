@@ -9,7 +9,9 @@ pipeline {
     }
     stage('build') {
       steps {
-        powershell(script: 'C:/Users/tlu038/programs/Jenkins/powershell/build.ps1', encoding: 'utf-8', returnStatus: true, returnStdout: true)
+        echo 'Completed downloading the sources code.'
+		pwd
+		powershell(script: 'C:/Users/tlu038/programs/Jenkins/powershell/build.ps1', encoding: 'utf-8', returnStatus: true, returnStdout: true)
         echo 'Maven building is completed.'
       }
     }
