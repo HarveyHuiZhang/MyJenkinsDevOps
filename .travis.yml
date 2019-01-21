@@ -7,9 +7,9 @@ dist: trusty
 
 addons:
   sonarcloud:
-    organization: "sonarcloud_organization_key"
+    organization: harveyhuizhang-github
     token:
       secure: 624cd10597a862c57608cfc61dbb7c484c7d68b0
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
