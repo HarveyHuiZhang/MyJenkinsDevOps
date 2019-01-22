@@ -19,4 +19,6 @@ cache:
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   #624cd10597a862c57608cfc61dbb7c484c7d68b0
-  - mvn sonar:sonar -Dsonar.projectKey=HarveyHuiZhang_MyJenkinsDevOps -Dsonar.organization=harveyhuizhang-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN} -Dsonar.profile=my_java_custom_rules
+  #-Dsonar.profile=my_java_custom_rules
+  #- mvn sonar:sonar -Dsonar.projectKey=HarveyHuiZhang_MyJenkinsDevOps -Dsonar.organization=harveyhuizhang-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${SONAR_TOKEN}
+  - mvn sonar:sonar -Dsonar.projectKey=HarveyHuiZhang_MyJenkinsDevOps -Dsonar.organization=harveyhuizhang-github -Dsonar.host.url=https://sonar.pwcinternal.com -Dsonar.login=9e0a7dacbe2dec55b9ce6673de7acd4ca78e81d2
